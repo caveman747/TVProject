@@ -81,7 +81,7 @@ class PageThree(tk.Tk):
             clock1.after(200, times)
 
 
-        self.background_image = ImageTk.PhotoImage(Image.open("/home/tester/TVProject/LockScreen-Vietnam.png"))
+        self.background_image = ImageTk.PhotoImage(Image.open("/home/ITStats/TVProject/LockScreen-Vietnam.png"))
         self.background_label = tk.Label(self, image=self.background_image)
         self.background_label.pack(fill=tk.BOTH)
 
