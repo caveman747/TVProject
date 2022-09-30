@@ -30,7 +30,7 @@ class PageOne(tk.Tk):
         name1 = tk.Label(self, fg="white", bg=self.mycolor, font=("calibri", 20, "bold"))
         name1.place(rely=.7, relx=.1)
         clock1 = tk.Label(self, fg="white", bg=self.mycolor, font=("calibri", 25, "bold"))
-        clock1.place(rely=.8, relx=.2)
+        clock1.place(rely=.7, relx=.2)
 
         times()
         self.mainloop()
