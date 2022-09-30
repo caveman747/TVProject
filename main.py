@@ -1,34 +1,29 @@
 import tkinterclasses
-import sys
-import signal
-import time
 
 
-def signal_handler(signal, frame):
-    print("\nprogram exiting gracefully")
-    sys.exit(0)
 
 
-while True:
+def main():
 
-    pageone = tkinterclasses.PageOne()
+    i = 0
 
-    pageone.after(3000, pageone.destroy)
+    while i < 3:
 
-    pageone.mainloop()
+        pageone = tkinterclasses.PageOne()
 
-    time.sleep(3)
+        pageone.after(3000, pageone.destroy)
 
-    pagetwo = tkinterclasses.PageTwo()
+        pageone.destroy()
 
-    pagetwo.after(3000, pagetwo.destroy)
+        pagetwo = tkinterclasses.PageOne()
 
-    pagetwo.mainloop()
+        pagetwo.after(3000, pagetwo.destroy)
 
-    pagethree = tkinterclasses.PageThree()
+        pagetwo.mainloop()
 
-    pagethree.after(3000, pagethree.destroy)
-
-    pagethree.mainloop()
+        i = i + 1
 
 
+
+if __name__ == "__main__":
+    main()
