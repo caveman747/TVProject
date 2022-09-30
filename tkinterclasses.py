@@ -9,7 +9,7 @@ class PageOne(tk.Tk):
     def __init__(self):
         super().__init__()
 
-        self.mycolor = '#%02x%02x%02x' % (2, 30, 110)
+        self.mycolor = '#%02x%02x%02x' % (1, 15, 86)
 
         self.attributes("-fullscreen", True)
 
@@ -28,14 +28,12 @@ class PageOne(tk.Tk):
 
 
         name1 = tk.Label(self, fg="white", bg=self.mycolor, font=("calibri", 20, "bold"))
-        name1.place(rely=.8, relx=.1)
+        name1.place(rely=.85, relx=.15)
         clock1 = tk.Label(self, fg="white", bg=self.mycolor, font=("calibri", 25, "bold"))
-        clock1.place(rely=.8, relx=.2)
+        clock1.place(rely=.9, relx=.15)
 
         times()
         self.mainloop()
-
-
 
 
 # class PageTwo(tk.Tk):
